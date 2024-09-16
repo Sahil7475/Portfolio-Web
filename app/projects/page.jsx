@@ -28,8 +28,8 @@ const projects = [
       { name: "Mongo DB" },
     ],
     image: "/assets/work/Momento.png",
-    live: "https://play.google.com/store/apps/details?id=com.prathameshkumbhar.bfit&hl=en_US",
-    github: "https://github.com/PrathameshKumbhar291113/B-Fit",
+    live: "https://momento-eosin.vercel.app/",
+    github: "https://github.com/Sahil7475/Momento-Social_Media_Application",
   },
   {
     num: "02",
@@ -44,8 +44,8 @@ const projects = [
       { name: "Mongo DB" },
     ],
     image: "/assets/work/Admin_Dashoboard.png",
-    live: "https://admin-dashboard-frontend.onrender.com/",
-    github: "https://github.com/PrathameshKumbhar291113/Cradle-Care-Backend",
+    live: "https://admin-dashboard-d7fp.vercel.app/",
+    github: "https://github.com/Sahil7475/Admin-Dashboard",
   },
   {
     num: "03",
@@ -61,8 +61,7 @@ const projects = [
       { name:"Dapper"}
     ],
     image: "/assets/work/AuctionWorx.png",
-    live: "https://github.com/PrathameshKumbhar291113/CropBit",
-    github: "https://github.com/PrathameshKumbhar291113/CropBit",
+
   },
 ];
 
@@ -145,10 +144,12 @@ const Project = () => {
                 {project.title}
               </h2>
               <div className="flex items-center gap-4 ml-[auto]">
+
+  {project.live && (
   <Link href={project.live}>
     <TooltipProvider delayDuration={100}>
       <Tooltip>
-        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group ">
+        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
           <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
         </TooltipTrigger>
         <TooltipContent>
@@ -157,7 +158,9 @@ const Project = () => {
       </Tooltip>
     </TooltipProvider>
   </Link>
+)}
 
+{project.github && (
   <Link href={project.github}>
     <TooltipProvider delayDuration={100}>
       <Tooltip>
@@ -170,6 +173,8 @@ const Project = () => {
       </Tooltip>
     </TooltipProvider>
   </Link>
+)}
+  
 </div>
               
               
