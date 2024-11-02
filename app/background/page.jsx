@@ -88,7 +88,7 @@ const experience = {
     },
     {
       company: "Systenics Solutions.",
-      position: "Dot Net Developer Intern",
+      position: "Software Developer Intern",
       duration: "Dec 2023 - June 2024",
     },
     {
