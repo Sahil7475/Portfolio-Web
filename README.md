@@ -29,7 +29,8 @@ Link to the website :- https://sahil-portfolio-phi.vercel.app/
    npm run dev
    ```
 ## Screenshot
-![portfolio](https://github.com/user-attachments/assets/b16f7303-e54f-4f48-b4be-e31cc15dcc53)
+![image](https://github.com/user-attachments/assets/54005745-2458-49fa-8c0d-c9a520ca6c33)
+
 
 
    
